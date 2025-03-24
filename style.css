@@ -5,6 +5,10 @@
     --text-color: #121212;
     --accent-color: #00ff88;
     --link-color: #007bff;
+    --skill-bg-color: #00ff88;  
+    --skill-text-color: #121212; 
+    --card-bg-color: #f8f9fa;    
+    --card-text-color: #333;     
 }
 
 /* Modo Escuro */
@@ -13,6 +17,10 @@
     --text-color: #ffffff;
     --accent-color: #00ff88;
     --link-color: #66ccff;
+    --skill-bg-color: #00ff88;
+    --skill-text-color: #121212;
+    --card-bg-color: #343a40; 
+    --card-text-color: #fff;   
 }
 
 html, body {
@@ -22,6 +30,9 @@ html, body {
     transition: background-color 0.3s, color 0.3s;
     margin: 0;
     padding: 0;
+}
+
+body {
     box-sizing: border-box;
 }
 
@@ -78,7 +89,6 @@ header nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -93,10 +103,10 @@ header nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--accent-color);
+    background: var(--skill-bg-color);
     padding: 20px;
     border-radius: 15px;
-    color: #121212;
+    color: var(--skill-text-color);
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
@@ -134,14 +144,13 @@ header nav a:hover {
     opacity: 1;
 }
 
-
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     justify-content: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1050px;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -156,12 +165,13 @@ header nav a:hover {
 .project-card {
     position: relative;
     overflow: hidden;
+    max-width: 500px;
     border-radius: 15px;
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     height: 0;
-    padding-bottom: 75%; 
+    padding-bottom: 75%;  
 }
 
 .project-card img {
@@ -175,7 +185,7 @@ header nav a:hover {
 }
 
 .project-card:hover img {
-    filter: brightness(0.4);
+    filter: brightness(0.4); 
 }
 
 .project-info {
@@ -187,7 +197,7 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); 
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
@@ -199,7 +209,6 @@ header nav a:hover {
 .project-card:hover .project-info {
     opacity: 1;
 }
-
 
 .contact {
     background: var(--accent-color);
@@ -217,33 +226,11 @@ header nav a:hover {
     text-decoration: none;
     color: #121212;
     font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-.contact a:hover {
-    transform: scale(1.1);
-}
-
-
-@media (max-width: 768px) {
-    .projects {
-        grid-template-columns: 1fr;
-    }
-
-    .project-card {
-        padding-bottom: 56.25%;
-    }
-}
-
-.contact a {
-    text-decoration: none;
-    color: #121212;
-    font-weight: bold;
     padding: 8px 12px;
     position: relative;
     display: inline-block;
+    transition: transform 0.3s ease;
 }
-
 
 .contact a::after {
     content: "";
@@ -256,16 +243,72 @@ header nav a:hover {
     animation: lineLoop 5s infinite ease-in-out;
 }
 
-
-@keyframes lineLoop {
-    0% {
-        width: 0;
-    }
-    50% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
-    }
+.contact a:hover {
+    transform: scale(1.05); 
 }
 
+.btn-custom-about {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--skill-text-color);
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-custom-about:hover {
+    background-color: #00cc77;  
+    border-color: #00cc77;
+    color: var(--skill-text-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom-about:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.5); 
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    color: var(--card-text-color);
+}
+
+#aboutMeContent {
+    width: 40vw; 
+    margin-top: 20px;
+    text-align: justify;
+}
+
+button.btn.btn-outline-success {
+    border: 2.8px solid;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 128, 0, 0.301);
+}
+
+.programador{
+    max-width: 40px;
+    margin-right: 4px;
+   
+}
+
+@keyframes lineLoop {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding-bottom: 56.25%;  
+    }
+    #aboutMeContent{
+        width: 90vw;
+    }
+}
