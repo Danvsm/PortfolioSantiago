@@ -79,18 +79,30 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+
+    margin: auto;
+
     text-align: center;
+
+    min-height: 100vh;
     padding: 20px;
     margin: 0;
+
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: background-color 0.3s, color 0.3s;
+    
 }
+
+
 
 .skills {
     display: grid;
+    justify-content: center; 
+    align-items: center; 
+    
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     max-width: 1000px;
@@ -98,32 +110,34 @@ header nav a:hover {
     margin-top: 20px;
 }
 
+
 .skill {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
     justify-content: center;
-    background: var(--skill-bg-color);
-    padding: 20px;
-    border-radius: 15px;
+    flex-direction: column;
+    gap: 10px;
+    
+    text-align: center;
     color: var(--skill-text-color);
     font-weight: bold;
     font-size: 1.5rem;
+
+    background: var(--skill-bg-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    
+    
     cursor: pointer;
     position: relative;
     transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
     
+    
+    padding: 20px;
     height: 150px;
     width: 195px;
 }
 
-.skill i {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
 
 .skill::after {
     content: attr(data-description);
