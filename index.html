@@ -75,60 +75,366 @@
 
     <section class="section" id="skills">
         <h2>Habilidades</h2>
+
+        <div class="skills">
+            <!--HTML-->
+            <button type="button" class="skill" data-description="Estrutura páginas web" data-bs-toggle="modal"
+                data-bs-target="#exemplo-modal">
+                <img src="img/html-5.png" class="habilidades-icone"></img>
+                HTML
+            </button>
+            <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>HTML 5</h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Com base no meu conhecimento em <strong>HTML5</strong>, eu me classifico como <strong>avançado</strong>.<br><br>
+                                Eu domino <strong>tags semânticas</strong>, <strong>formulários avançados</strong> e o uso de <strong>vídeos e áudios nativos</strong>, garantindo páginas modernas e bem estruturadas.<br><br>
+                                Também possuo experiência com a <strong>API de Geolocalização</strong> e outros recursos do <strong>HTML5</strong>, permitindo a criação de aplicações interativas e dinâmicas.<br><br>
+                                Com esse conhecimento, sou capaz de desenvolver <strong>páginas eficientes, acessíveis e alinhadas às boas práticas da web</strong>.
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CSS-->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-css" class="skill"
+                data-description="Estiliza páginas web">
+                <img src="img/css-3.png" class="habilidades-icone"></img>
+                CSS
+            </button>
+            <div class="modal" id="modal-css" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>CSS</h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Com base no meu conhecimento em <strong>CSS</strong>, me classifico como <strong>intermediário</strong>.<br><br>
+                                Tenho domínio sobre <strong>Flexbox</strong>, criação de <strong>layouts responsivos</strong> e manipulação de <strong>posicionamento e especificidade</strong>, garantindo páginas bem estruturadas e visualmente organizadas.<br><br>
+                                Com boas práticas de <strong>CSS</strong>, consigo desenvolver <strong>interfaces modernas e adaptáveis</strong>, oferecendo uma excelente experiência para diferentes dispositivos.
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--JAVASCRIPT-->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-js" class="skill"
+                data-description="Adiciona interatividade às páginas">
+                <img src="img/js.png" class="habilidades-icone"></img>
+                JavaScript
+            </button>
+            <div class="modal" id="modal-js" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>CSS</h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Com base no meu conhecimento em JavaScript, me classifico como
+                                <strong>intermediário</strong>.<br><br>
+                                Eu entendo bem conceitos como <strong>funções anônimas</strong>, manipulação do
+                                <strong>DOM</strong>, o uso de <strong>this</strong>, <strong>event
+                                    listeners</strong>, e a diferença entre <strong>let</strong>,
+                                <strong>var</strong> e <strong>const</strong>.<br><br>
+                                Embora eu ainda precise aprimorar o uso de <strong>promessas</strong>,
+                                <strong>manipulação de arrays</strong> e <strong>delegação de eventos</strong>, já sou
+                                capaz de lidar com código assíncrono utilizando <strong>async/await</strong> de
+                                forma eficiente.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--BOOTSTRAP-->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-bootstrap" class="skill"
+                data-description="Adiciona interatividade às páginas">
+                <img src="img/bootstrap.png" class="habilidades-icone"></img>
+                Bootstrap
+            </button>
+            <div class="modal" id="modal-bootstrap" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>CSS</h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Com base no meu conhecimento em Bootstrap, me classifico como
+                                <strong>básico/intermediário</strong>.<br><br>
+                                Eu sei como <strong>configurar o Bootstrap</strong> via CDN, criar <strong>navbars
+                                    responsivas</strong> e
+                                utilizar componentes como <strong>modais, carrosséis e cards</strong>.<br><br>
+                                Ainda estou aprimorando minhas habilidades com <strong>grid layout</strong>,
+                                personalização avançada com <strong>SASS</strong>
+                                e manipulação dinâmica de componentes via JavaScript. Porém, já consigo criar páginas
+                                modernas e responsivas usando as
+                                classes utilitárias do Bootstrap.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--JQUERY-->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-jquery" class="skill"
+                data-description="Manipulação do DOM e interatividade com jQuery">
+                <img src="img/social.png" class="habilidades-icone"></img>
+                jQuery
+            </button>
+            <div class="modal" id="modal-jquery" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>jQuery</h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Com base no meu conhecimento em jQuery, me classifico como
+                                <strong>básico/intermediário</strong>.<br><br>
+                                Eu sei como <strong>selecionar e manipular elementos do DOM</strong>, lidar com
+                                <strong>eventos</strong> como
+                                clique e teclado, modificar <strong>classes e estilos</strong>, além de
+                                <strong>adicionar e remover elementos dinamicamente</strong>.<br><br>
+                                Ainda estou aprimorando minhas habilidades em <strong>animações avançadas</strong>,
+                                <strong>requisições AJAX</strong> e event delegation,
+                                mas já consigo criar interfaces interativas e dinâmicas com jQuery.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--GIT-->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-git" class="skill"
+                data-description="Controle de versão e colaboração com Git">
+                <img src="img/git-logo.png" class="habilidades-icone"></img>
+                Git
+            </button>
+            <div class="modal" id="modal-git" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Git</h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Tenho um domínio sólido sobre os fundamentos do <strong>Git</strong>, essencial para o
+                                controle de versão e colaboração eficiente em projetos.<br><br>
+                                Sou capaz de <strong>inicializar e clonar repositórios</strong>, acompanhar e versionar
+                                alterações com <strong>commits organizados</strong> e manter um histórico limpo usando
+                                <strong>git log</strong> e <strong>git status</strong>. Além disso, entendo a
+                                importância de <strong>branches</strong> e estou aprimorando meu conhecimento em
+                                <strong>mesclagem de código</strong> para melhorar ainda mais meu fluxo de
+                                trabalho.<br><br>
+                                Minha experiência prática me permite trabalhar com repositórios locais e sincronizar
+                                mudanças com repositórios remotos através de <strong>git pull</strong> e <strong>git
+                                    push</strong>.
+                                Meu próximo passo é aprofundar meu conhecimento em <strong>resolução de conflitos, stash
+                                    e rebase</strong> para otimizar ainda mais minha produtividade no Git.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--WORD-->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-word" class="skill"
+                data-description="Edição e formatação de documentos no Word">
+                <img src="img/word.png" class="habilidades-icone"></img>
+                Microsoft Word
+            </button>
+            <div class="modal" id="modal-word" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Microsoft Word</h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Tenho um nível <strong>intermediário</strong> no Microsoft Word, com domínio das
+                                principais ferramentas para criar e formatar documentos profissionais.<br><br>
+                                Sou hábil na <strong>formatação de textos</strong>, utilizando diferentes estilos,
+                                tamanhos e cores de fonte, além de aplicar <strong>negrito, itálico e
+                                    sublinhado</strong> conforme necessário.
+                                Tenho experiência com <strong>estilos e temas</strong> para padronizar documentos e
+                                facilitar a diagramação.<br><br>
+                                Também sei inserir e manipular <strong>tabelas, imagens e formas</strong>, além de
+                                utilizar **listas numeradas e com marcadores** para organizar informações.
+                                Para documentos mais extensos, utilizo <strong>quebra de página e de seção</strong> para
+                                manter a estrutura organizada.<br><br>
+                                Meu próximo passo é aprofundar meus conhecimentos na criação de <strong>sumários
+                                    automáticos</strong>, no uso de <strong>ferramentas de revisão</strong> e em <strong>atalhos para aumentar a
+                                        produtividade</strong> no Word.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--EXCEL-->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-excel" class="skill"
+                data-description="Manipulação e organização de dados no Excel">
+                <img src="img/excel.png" class="habilidades-icone"></img>
+                Microsoft Excel
+            </button>
+            <div class="modal" id="modal-excel" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Microsoft Excel</h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Tenho um nível <strong>básico/intermediário</strong> no Microsoft Excel, com um bom
+                                domínio das ferramentas essenciais para manipulação de dados e cálculos.<br><br>
+                                Sou capaz de <strong>criar e formatar tabelas</strong>, utilizando recursos como bordas,
+                                cores e estilos para organizar informações de maneira clara.
+                                Tenho conhecimento em **fórmulas básicas**, como <strong>SOMA, MÉDIA, MÁXIMO e
+                                    MÍNIMO</strong>, e consigo aplicar **funções condicionais**, como
+                                <strong>SE</strong>, para análise de dados.<br><br>
+                                Além disso, compreendo o conceito de **tabelas dinâmicas** e funções de busca como
+                                <strong>PROC V (VLOOKUP) e PROCH (HLOOKUP)</strong>, embora ainda esteja aprimorando
+                                minha prática nesses recursos.
+                                Estou me aprofundando no uso de **filtros, gráficos e referências absolutas/relativas**,
+                                visando aumentar minha eficiência na organização e análise de dados.<br><br>
+                                Meu próximo passo é explorar mais **automatizações**, como <strong>Macros e
+                                    VBA</strong>, e aprimorar minha produtividade com **atalhos do Excel**.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CORELDRAW-->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-coreldraw" class="skill"
+                data-description="Edição e criação vetorial no CorelDRAW">
+                <img src="img/cdr.png" class="habilidades-icone"></img>
+                CorelDRAW
+            </button>
+            <div class="modal" id="modal-coreldraw" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>CorelDRAW</h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Tenho um nível <strong>básico/intermediário</strong> em CorelDRAW, com experiência na
+                                criação e edição de elementos vetoriais.<br><br>
+                                Sei criar e editar <strong>formas básicas</strong>, além de manipular vetores para
+                                ajustes precisos.
+                                Tenho conhecimento em <strong>vectorização de imagens</strong> e consigo exportar
+                                arquivos em diferentes formatos (<strong>PDF, PNG, SVG</strong>) para impressão ou uso
+                                digital.<br><br>
+                                Estou me aprofundando no uso de <strong>camadas</strong>, <strong>máscaras de corte (PowerClip)</strong> e
+                                <strong>efeitos de transparência</strong>, buscando melhorar minhas habilidades para produção de
+                                materiais gráficos, como <strong>cartões de visita, banners e
+                                    logotipos</strong>.<br><br>
+                                Meu próximo objetivo é aprimorar minhas técnicas de <strong>edição avançada</strong>, incluindo uso
+                                de ferramentas como <strong>Bezier e Caneta</strong> para criar formas personalizadas e explorar mais
+                                os recursos de <strong>alinhamento e distribuição</strong> para organizar elementos no
+                                design.<br><br>
+                                Com esse conhecimento, já consigo criar artes bem elaboradas e organizadas, garantindo
+                                um design limpo e profissional.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--PS-->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-photoshop" class="skill"
+            data-description="Edição e manipulação de imagens no Photoshop">
+            <img src="img/photoshop.png" class="habilidades-icone"></img>
+            Adobe Photoshop
+            </button>
+            <div class="modal" id="modal-photoshop" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5><strong>Adobe Photoshop</strong></h5>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-start">
+                                Tenho um nível <strong>básico/intermediário</strong> em <strong>Adobe Photoshop</strong>, com experiência na <strong>criação e edição de imagens</strong> para diferentes finalidades.<br><br>
+                                Sei <strong>criar e editar imagens</strong> utilizando <strong>camadas</strong> para organização, além de aplicar e modificar <strong>efeitos e filtros</strong> para realçar detalhes e melhorar a qualidade visual.<br><br>
+                                Tenho conhecimento em <strong>ajuste de cores e iluminação</strong> (<strong>Brilho/Contraste, Níveis, Curvas</strong>) e consigo trabalhar com <strong>textos e efeitos tipográficos</strong>, criando composições equilibradas e chamativas.<br><br>
+                                Estou aprimorando meu uso de <strong>máscaras de camada</strong> e <strong>ferramentas de seleção</strong>, buscando tornar minha edição mais precisa e profissional.<br><br>
+                                Meu próximo objetivo é aprofundar meus conhecimentos em <strong>manipulação avançada</strong>, explorando técnicas de <strong>retoque e composição</strong> para criar imagens ainda mais impactantes.<br><br>
+                                Com essa experiência, já consigo produzir <strong>peças visuais atrativas e de qualidade</strong>, atendendo às principais demandas de <strong>edição e criação gráfica</strong>.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><strong>Cancelar</strong></button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal"><strong>Entendi</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         
-            <div class="skills">
-                <div class="skill" data-description="Estrutura páginas web">
-                    <img src="img/html-5.png" class="habilidades-icone"></img> 
-                    HTML
-                    >
-                </div>
-                
-                <div class="skill" data-description="Estiliza páginas web">
-                    <img src="img/css-3.png" class="habilidades-icone"></img> 
-                    CSS
-                </div>
-                
-                <div class="skill" data-description="Adiciona interatividade às páginas">
-                    <img src="img/js.png" class="habilidades-icone"></img> 
-                    JavaScript
-                </div>
-                
-                <div class="skill" data-description="Facilita a criação de layouts responsivos">
-                    <img src="img/bootstrap.png" class="habilidades-icone"></img> 
-                    Bootstrap
-                </div>
-                
-                <div class="skill" data-description="Simplifica manipulação do DOM">
-                    <img src="img/social.png" class="habilidades-icone"></img> 
-                    jQuery
-                </div>
-                
-                <div class="skill" data-description="Gerencia versões de código">
-                    <img src="img/git-logo.png" class="habilidades-icone"></img> 
-                    GIT
-                </div>
-                
-                <div class="skill" data-description="Criação e edição de documentos">
-                    <img src="img/word.png" class="habilidades-icone"></img> 
-                    Word
-                </div>
-                
-                <div class="skill" data-description="Manipulação de dados e planilhas">
-                    <img src="img/excel.png" class="habilidades-icone"></img> 
-                    Excel
-                </div>
-                
-                <div class="skill" data-description="Criação de design vetorial">
-                    <img src="img/cdr.png" class="habilidades-icone"></img> 
-                    CorelDRAW
-                </div>
-                
-                <div class="skill" data-description="Edição e manipulação de imagens">
-                    <img src="img/photoshop.png" class="habilidades-icone"></img> 
-                    Photoshop
-                </div>            
-            
-    </div>
+        
+
+        </div>
 
     </section>
 
@@ -141,7 +447,7 @@
                     target="_blank">Fale comigo no WhatsApp</a></p>
         </address>
     </section>
-    
+
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

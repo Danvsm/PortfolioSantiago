@@ -318,6 +318,10 @@ button.btn.btn-outline-success {
     display: none !important;
 }
 
+.modal-content{
+    background-color: var(--bg-color) !important;
+    color: var( --text-color);
+}
 
 @keyframes lineLoop {
     0% { width: 0; }
