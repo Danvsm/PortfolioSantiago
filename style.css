@@ -323,6 +323,11 @@ button.btn.btn-outline-success {
     color: var( --text-color);
 }
 
+.subtexto{
+    font-weight: 100;
+    font-style: italic;
+}
+
 @keyframes lineLoop {
     0% { width: 0; }
     50% { width: 100%; }
@@ -363,7 +368,7 @@ button.btn.btn-outline-success {
         max-width: 400px;
     }
     .skill{
-        width: 170px;
+        width: 160px;
     }
     .skill::after {
         content: attr(data-description);
